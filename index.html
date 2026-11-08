@@ -1,55 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Redirect</title></head>
-<body>
-<script>
-  window.location.replace("snssdk1180://ec/pdp?page_name=product_detail&need_mall=1&is_commerce=1&params_url=https%3A%2F%2Fvt.tiktok.com%2FZS9fMnxEk3Jac-q6feh%2F");
-</script>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đang mở sản phẩm...</title>
+    
+    <!-- Phần này giúp hiển thị ảnh và tiêu đề đẹp khi share qua Zalo/Messenger -->
+    <meta property="og:title" content="Tai nghe chụp tai Bluetooth Sony WH-1000XM6" />
+    <meta property="og:image" content="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a28e4dad1e5c444da7d12a4b29c3bcf7~tplv-aphluv4xwc-resize-webp:260:260.webp" />
+    
+    <!-- ĐOẠN MÃ CHUYỂN HƯỚNG TỰ ĐỘNG VÀO APP -->
+    <script>
+        window.location.href = "snssdk1180://ec_goods_detail?promotion_id=1733398337609565664&enter_from=h5_product_detail";
+        
+        // Dự phòng nếu không mở được app (sau 2 giây sẽ hiện thông báo)
+        setTimeout(function() {
+            document.getElementById('loading').innerHTML = "Không thể mở ứng dụng TikTok. Vui lòng kiểm tra xem bạn đã cài đặt TikTok chưa nhé!";
+        }, 2000);
+    </script>
+</head>
+<body style="text-align: center; padding-top: 50px; font-family: sans-serif;">
+    <h2 id="loading">Đang mở sản phẩm trong TikTok...</h2>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
